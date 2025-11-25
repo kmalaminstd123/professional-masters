@@ -1,0 +1,58 @@
+@media only screen and (max-width: 768px){
+    header h1{
+        font-size: 27px;
+    }
+
+    header p{
+        font-size: 18px;
+    }
+
+    .navbar{
+        border-radius: 20px;
+    }
+
+    .section_title h2{
+        font-size: 45px;
+    }
+
+    p{
+        font-size: 23px;
+    }
+
+    .apm-image-card{
+        margin-top: 30px;
+    }
+
+    .cert-frame{
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-wrapper h5.footer-title{
+        text-align: center;
+    }
+
+    .footer-links li{
+        text-align: center;
+    }
+
+    footer p{
+        text-align: center;
+    }
+
+    .footer-logo h4{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    header h1{
+        font-size: 22px;
+    }
+
+    header p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
