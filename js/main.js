@@ -368,3 +368,21 @@ gsap.to('.landing_footer_bg', {
     scrub: 2
   }
 })
+
+
+// close menu on nav link click
+const navLinks = document.querySelectorAll('.fullpage-nav ul li')
+navLinks.forEach(link => {
+  link.addEventListener('click', ()=>{
+    gsap.to(fullNav, {
+        duration: 0.4,
+        opacity: 0,
+        scale: 0.95,
+        pointerEvents: 'none',
+        ease: "power3.in"
+    });
+
+    // Make sure the navOpen state is updated
+    navOpen = false;
+  })
+})
