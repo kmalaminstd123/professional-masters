@@ -1,0 +1,121 @@
+/* Responsive Design */
+
+@media (max-width: 991px) {
+    .header h1 {
+        font-size: 42px;
+    }
+
+    .header p {
+        font-size: 18px;
+    }
+
+    .navbar-container {
+        width: 95%;
+        padding: 0.5rem 1rem;
+    }
+
+    .section_title h2 {
+        font-size: 36px;
+    }
+
+    /* Stats */
+    .stat-item {
+        margin-bottom: 20px;
+    }
+
+    /* Certificate */
+    .cert-frame {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cert-transcript {
+        transform: none;
+        margin-top: -20px;
+    }
+
+    /* Horizontal Scroll */
+    .pm-horizontal-scroll {
+        padding-left: 20px;
+        overflow-x: auto;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    
+    .pm-type-card {
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .header p {
+        padding: 0 20px;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .section_title h2 {
+        font-size: 28px;
+    }
+
+    .lead_section p {
+        font-size: 18px;
+        text-align: left !important;
+    }
+
+    /* Endorse */
+    .endorse-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .endorse-box::after {
+        display: none;
+    }
+
+    /* Highlights */
+    .highlight-item {
+        text-align: center;
+    }
+
+    /* About */
+    .apm-bg-glow {
+        display: none;
+    }
+
+    .apm-image-card {
+        margin-top: 40px;
+    }
+
+    /* Footer */
+    .footer-wrapper {
+        text-align: center;
+    }
+
+    .footer-links li a:hover {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .myBtn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .stat-number {
+        font-size: 36px;
+    }
+}
