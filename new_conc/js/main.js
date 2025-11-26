@@ -145,3 +145,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// footer parralax gsap
+gsap.to('.landing_footer_bg', {
+    y: "-20%",
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".landing-footer",
+        start: "top bottom",
+        end: "bottom bottom",
+        scrub: 2,
+    }
+})
