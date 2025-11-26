@@ -11,7 +11,8 @@
     --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
     --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
-    --heading-font: 'Syne', sans-serif;
+    /* --heading-font: 'Syne', sans-serif; */
+    --heading-font: "Arimo", sans-serif;
     --body-font: 'Manrope', sans-serif;
 }
 
@@ -261,8 +262,8 @@ p {
 
 .endorse-logo img {
     max-width: 220px;
-    filter: grayscale(100%);
-    opacity: 0.8;
+    /* filter: grayscale(100%); */
+    opacity: 1;
     transition: 0.3s;
 }
 
