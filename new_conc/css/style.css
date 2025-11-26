@@ -618,3 +618,135 @@ p {
     opacity: 0.6;
     font-size: 14px;
 }
+
+/* Parallax & Dedicated Sections */
+
+/* Parallax Utility */
+.parallax-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+
+.parallax-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 36, 71, 0.85); /* Dark blue overlay */
+    z-index: 1;
+}
+
+/* Entry Requirements */
+.entry-req-section {
+    /* background-image: url('../images/entry_req.jpg'); */
+    /* min-height: 600px; */
+    overflow: hidden;
+}
+
+.entry-requirement-bg{
+    background: linear-gradient(rgba(11, 36, 71, 0.85), rgba(11, 36, 71, 0.85)), url('../images/entry_req.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 125%;
+    width: 100%;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Assessment Section */
+.assessment-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--light-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--primary-blue);
+    flex-shrink: 0;
+}
+
+.assessment-item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.eval-box {
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+
+.eval-box:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-gold);
+}
+
+/* Required Documents */
+.documents-section {
+    /* background-image: url('../images/foot_bg.jpg'); */
+    overflow: hidden;
+}
+
+.document-section-bg{
+    background: linear-gradient(rgba(11, 36, 71, 0.85), rgba(11, 36, 71, 0.85)), url('../images/req_doc.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 125%;
+}
+
+.glass-card-sm {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.glass-card-sm:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    border-color: var(--accent-gold);
+}
+
+/* Administration Section */
+.admin-grid {
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.admin-item strong {
+    color: var(--primary-blue);
+    font-size: 18px;
+}
+
+/* Mobile Responsiveness for Parallax */
+@media (max-width: 991px) {
+    .parallax-section {
+        background-attachment: scroll; /* Disable fixed attachment on mobile for performance/support */
+        min-height: auto; /* Allow height to adjust to content */
+    }
+    
+    .entry-req-section {
+        padding: 80px 0;
+    }
+}

@@ -157,3 +157,26 @@ gsap.to('.landing_footer_bg', {
         scrub: 2,
     }
 })
+
+// documents part gsap
+gsap.to('.document-section-bg', {
+    y: "-15%",
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".documents-section",
+        start: "top bottom",
+        end: "bottom bottom",
+        scrub: 2
+    }
+})
+
+gsap.to('.entry-requirement-bg', {
+    y: "-15%",
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".entry-req-section",
+        start: "top bottom",
+        end: "bottom bottom",
+        scrub: 2
+    }
+})
