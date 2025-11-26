@@ -133,6 +133,11 @@ p {
     color: var(--primary-blue);
 }
 
+.navbar-brand img{
+    width: 150px;
+    height: auto;
+}
+
 .navbar-toggler {
     border: none;
     color: var(--primary-blue);
@@ -484,6 +489,8 @@ p {
 }
 
 /* Programs Horizontal Scroll */
+
+
 .pm-types-section {
     padding: 120px 0;
     background: var(--primary-blue);
@@ -545,6 +552,11 @@ p {
     color: var(--text-gray);
 }
 
+/* assessment section */
+
+
+/* assessment section */
+
 /* Footer */
 .landing-footer {
     background: var(--primary-blue);
@@ -580,6 +592,7 @@ p {
 
 .footer-links li {
     margin-bottom: 12px;
+    list-style: none;
 }
 
 .footer-links a {
@@ -589,6 +602,10 @@ p {
 .footer-links a:hover {
     color: var(--white);
     padding-left: 5px;
+}
+
+.footer-about{
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-newsletter input {
@@ -617,6 +634,10 @@ p {
     margin-top: 50px;
     opacity: 0.6;
     font-size: 14px;
+}
+
+.footer-bottom p{
+    color: rgba(255, 255, 255, 0.9);;
 }
 
 /* Parallax & Dedicated Sections */

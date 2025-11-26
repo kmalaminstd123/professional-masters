@@ -95,6 +95,10 @@
         margin-top: 40px;
     }
 
+    .tc_colm{
+        margin-bottom: 20px;
+    }
+
     /* Footer */
     .footer-wrapper {
         text-align: center;
@@ -119,3 +123,7 @@
         font-size: 36px;
     }
 }
+
+/* @media only screen and (max-width: 475px){
+
+} */

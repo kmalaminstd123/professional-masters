@@ -180,3 +180,36 @@ gsap.to('.entry-requirement-bg', {
         scrub: 2
     }
 })
+
+// ============================
+const navToggle2 = document.getElementById('navToggle');
+const fullNav2 = document.querySelector('.fullpage-nav');
+
+let navOpen2 = false;
+
+navToggle2.addEventListener('click', () => {
+
+    const header = document.querySelector('header');
+    const headerHeight = header.offsetHeight;
+
+    // Check if page scroll is less than header height
+    if (window.scrollY < headerHeight) {
+        window.scrollTo({
+            top: headerHeight,
+            behavior: 'smooth'
+        });
+    }
+
+
+    
+    navOpen2 = !navOpen2;
+});
+
+
+document.querySelector('.get_start_btn').addEventListener('click', () => {
+    const headerHeight = document.querySelector('header').offsetHeight;
+    window.scrollTo({
+        top: headerHeight,
+        behavior: 'smooth'  // smooth scroll
+    });
+});
