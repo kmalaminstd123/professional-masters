@@ -12,7 +12,10 @@
     --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
     --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
     /* --heading-font: 'Syne', sans-serif; */
-    --heading-font: "Arimo", sans-serif;
+    /* --heading-font: "Arimo", sans-serif; */
+    /* --heading-font: "Playfair Display", serif; */
+    /* --heading-font: "Spectral", serif; */
+    --heading-font: "Space Grotesk", sans-serif;
     --body-font: 'Manrope', sans-serif;
 }
 
