@@ -136,15 +136,15 @@ if(closeNavBtn) closeNavBtn.addEventListener('click', toggleNav);
 navLinks.forEach(link => link.addEventListener('click', () => { if(navOpen) toggleNav(); }));
 
 // Smooth Scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if(target){
-            window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
-        }
-    });
-});
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
+//         const target = document.querySelector(this.getAttribute('href'));
+//         if(target){
+//             window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+//         }
+//     });
+// });
 
 // footer parralax gsap
 gsap.to('.landing_footer_bg', {
@@ -213,3 +213,35 @@ document.querySelector('.get_start_btn').addEventListener('click', () => {
         behavior: 'smooth'  // smooth scroll
     });
 });
+
+// venobox
+new VenoBox({
+    selector: ".sample_cert",
+    numeration: true,
+    infinigall: true,
+    spinner: 'rotating-plane'
+})
+
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         const id = this.getAttribute('href');
+//         const target = document.querySelector(id);
+
+//         if (!target) return;
+
+//         // height of your sticky navbar
+//         const navbarHeight = document.querySelector('header').offsetHeight || 80; 
+
+//         // calculate target position minus navbar
+//         const targetPosition = target.getBoundingClientRect().top + window.scrollY - navbarHeight;
+
+//         // smooth scroll
+//         window.scrollTo({
+//             top: targetPosition,
+//             behavior: 'smooth'
+//         });
+
+//         // update URL hash
+//         history.pushState(null, null, id);
+//     });
+// });
