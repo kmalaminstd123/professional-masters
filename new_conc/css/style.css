@@ -669,10 +669,18 @@ p {
 
 .pm-type-card h3 {
     color: var(--white);
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 15px;
     transition: 0.3s;
     margin-top: 15px;
+}
+
+.pm-type-card h3 a{
+    color: var(--white);
+}
+
+.pm-type-card:hover h3 a{
+    color: #616161;
 }
 
 .pm-type-card p {
