@@ -240,9 +240,8 @@
                 <div class="col-lg-5 mb-5 mb-lg-0" style="z-index: 1;">
                     <div class="section_title sticky-top" style="top: 100px;">
                         <h2>Invest in Your Future</h2>
-                        <p>We believe in empowering students. Explore our scholarship programs to make your professional
+                        <p>We believe in empowering participants. Explore our scholarship programs to make your professional
                             master’s journey affordable and rewarding.</p>
-                        <a href="#" class="btn myBtn mt-4">View All Scholarships</a>
                     </div>
                 </div>
                 <div class="col-lg-6 offset-lg-1">
@@ -331,42 +330,156 @@
     <!-- Scholarship Modal -->
     <div class="modal fade" id="scholarship_modal" tabindex="-1" aria-labelledby="scholarship_modal" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Scholarship Form</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content scholarship-modal-content">
+                <div class="modal-header scholarship-modal-header">
+                    <div class="scholarship-modal-title-wrapper">
+                        <i class="fa-solid fa-crown text-gold fs-3 mb-2"></i>
+                        <h1 class="modal-title" id="exampleModalLabel">Exceptional Scholarship Application</h1>
+                        <p class="modal-subtitle">Join our prestigious community of exceptional professionals</p>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <form action="">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="Enter your full name">
-                            <label for="floatingInput">Name</label>
+                <div class="modal-body scholarship-modal-body">
+                    <form action="" class="scholarship-form">
+                        <!-- Personal Information Section -->
+                        <div class="form-section">
+                            <h5 class="form-section-title">
+                                <i class="fa-solid fa-user me-2"></i>Personal Information
+                            </h5>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="custom-form-group">
+                                        <label for="applicant_name" class="custom-label">
+                                            <i class="fa-solid fa-id-card me-2"></i>Full Name
+                                        </label>
+                                        <input type="text" class="custom-input" id="applicant_name" placeholder="Enter your full name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="custom-form-group">
+                                        <label for="applicant_email" class="custom-label">
+                                            <i class="fa-solid fa-envelope me-2"></i>Email Address
+                                        </label>
+                                        <input type="email" class="custom-input" id="applicant_email" placeholder="your.email@example.com" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="custom-form-group">
+                                        <label for="applicant_phone" class="custom-label">
+                                            <i class="fa-brands fa-whatsapp me-2"></i>WhatsApp Number
+                                        </label>
+                                        <input type="tel" class="custom-input" id="applicant_phone" placeholder="+1 234 567 8900" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="custom-form-group">
+                                        <label for="applicant_country" class="custom-label">
+                                            <i class="fa-solid fa-globe me-2"></i>Country
+                                        </label>
+                                        <select class="custom-input" id="applicant_country" required>
+                                            <option value="">Select your country</option>
+                                            <option value="United States">United States</option>
+                                            <option value="United Kingdom">United Kingdom</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="Australia">Australia</option>
+                                            <option value="Bangladesh">Bangladesh</option>
+                                            <option value="India">India</option>
+                                            <option value="Pakistan">Pakistan</option>
+                                            <option value="Malaysia">Malaysia</option>
+                                            <option value="Singapore">Singapore</option>
+                                            <option value="UAE">United Arab Emirates</option>
+                                            <option value="Saudi Arabia">Saudi Arabia</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Email address</label>
+                        <!-- Professional Information Section -->
+                        <div class="form-section">
+                            <h5 class="form-section-title">
+                                <i class="fa-solid fa-briefcase me-2"></i>Professional Background
+                            </h5>
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="custom-form-group">
+                                        <label class="custom-label">
+                                            <i class="fa-solid fa-award me-2"></i>Professional Category
+                                        </label>
+                                        <div class="category-grid">
+                                            <label class="category-option">
+                                                <input type="radio" name="category" value="hr_professional" required>
+                                                <div class="category-card">
+                                                    <i class="fa-solid fa-users"></i>
+                                                    <span>HR Professional / Philanthropist</span>
+                                                </div>
+                                            </label>
+                                            <label class="category-option">
+                                                <input type="radio" name="category" value="teacher" required>
+                                                <div class="category-card">
+                                                    <i class="fa-solid fa-chalkboard-teacher"></i>
+                                                    <span>Teacher / Trainer</span>
+                                                </div>
+                                            </label>
+                                            <label class="category-option">
+                                                <input type="radio" name="category" value="government" required>
+                                                <div class="category-card">
+                                                    <i class="fa-solid fa-landmark"></i>
+                                                    <span>Government Official</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="custom-form-group">
+                                        <label class="custom-label">
+                                            <i class="fa-solid fa-clock me-2"></i>Years of Experience
+                                        </label>
+                                        <div class="experience-options">
+                                            <label class="experience-option">
+                                                <input type="radio" name="experience" value="3-5" required>
+                                                <span class="experience-badge">3-5 Years</span>
+                                            </label>
+                                            <label class="experience-option">
+                                                <input type="radio" name="experience" value="6-10" required>
+                                                <span class="experience-badge">6-10 Years</span>
+                                            </label>
+                                            <label class="experience-option">
+                                                <input type="radio" name="experience" value="10+" required>
+                                                <span class="experience-badge">10+ Years</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="Country">
-                            <label for="floatingInput">Country</label>
+                        <!-- Additional Information -->
+                        <div class="form-section">
+                            <h5 class="form-section-title">
+                                <i class="fa-solid fa-comment-dots me-2"></i>Additional Information (Optional)
+                            </h5>
+                            <div class="custom-form-group">
+                                <label for="additional_info" class="custom-label">
+                                    Tell us why you deserve this scholarship
+                                </label>
+                                <textarea class="custom-input" id="additional_info" rows="4" placeholder="Share your achievements, contributions, and aspirations..."></textarea>
+                            </div>
                         </div>
 
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Email address</label>
+                        <!-- Submit Button -->
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn scholarship-submit-btn">
+                                <i class="fa-solid fa-paper-plane me-2"></i>Submit Application
+                            </button>
                         </div>
-
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Email address</label>
-                        </div>
-                        <button class="btn btn-primary">Submit</button>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -701,7 +814,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials-section">
+    <!-- <section class="testimonials-section">
         <div class="container">
             <div class="section_title text-center mb-5">
                 <h2>What Our Graduates Say</h2>
@@ -749,7 +862,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Programs Horizontal Scroll Section -->
     <section class="pm-types-section" id="programs">
@@ -784,7 +897,7 @@
                     </div>
                     
                     <div class="pm-type-card">
-                        <span class="pm-tag available">Upcoming</span>
+                        <span class="pm-tag upcoming">Upcoming</span>
                         <h3>Professional Master’s in Applied Supply Chain Management</h3>
                         <p>Provides in-depth knowledge of modern supply chain operations, equipping learners with practical skills to optimize processes, manage logistics, and improve overall efficiency.</p>
                     </div>
@@ -820,16 +933,16 @@
                         <li><a href="#programs">Programmes</a></li>
                         <li><a href="#scholarships">Scholarships</a></li>
                         <li><a href="#certificate">Certificate</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#about_pm">About</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 mb-4">
                     <h5 class="footer-title">Resources</h5>
                     <ul class="footer-links">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="https://worldacademy.uk/blog" target="_blank">Blog</a></li>
+                        <li><a href="https://worldacademy.uk/faq" target="_blank">FAQ</a></li>
+                        <!-- <li><a href="#">Support</a></li> -->
+                        <li><a href="https://worldacademy.uk/contact" target="_blank">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 mb-4">

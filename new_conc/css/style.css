@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     font-weight: 700;
     color: var(--primary-blue);
+    text-transform: uppercase;
 }
 
 a {
@@ -920,4 +921,414 @@ p {
         padding: 80px 0;
     }
 }
+
+/* ============================================
+   SCHOLARSHIP MODAL STYLES
+   ============================================ */
+
+/* Modal Content */
+.scholarship-modal-content {
+    background: linear-gradient(135deg, #0B2447 0%, #19376D 100%);
+    border: none;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.scholarship-modal-content::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.15), transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Modal Header */
+.scholarship-modal-header {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.scholarship-modal-title-wrapper {
+    text-align: center;
+    width: 100%;
+}
+
+.scholarship-modal-header .modal-title {
+    color: var(--white);
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.scholarship-modal-header .modal-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    margin: 0;
+}
+
+.scholarship-modal-header .btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.scholarship-modal-header .btn-close:hover {
+    opacity: 1;
+    transform: rotate(90deg);
+}
+
+/* Modal Body */
+.scholarship-modal-body {
+    padding: 40px;
+    background: var(--white);
+    position: relative;
+    z-index: 1;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+/* Custom Scrollbar */
+.scholarship-modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scholarship-modal-body::-webkit-scrollbar-track {
+    background: var(--light-bg);
+    border-radius: 10px;
+}
+
+.scholarship-modal-body::-webkit-scrollbar-thumb {
+    background: var(--accent-gold);
+    border-radius: 10px;
+}
+
+.scholarship-modal-body::-webkit-scrollbar-thumb:hover {
+    background: #c49b2e;
+}
+
+/* Form Sections */
+.form-section {
+    margin-bottom: 35px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--light-bg);
+}
+
+.form-section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.form-section-title {
+    color: var(--primary-blue);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.form-section-title i {
+    color: var(--accent-gold);
+    font-size: 22px;
+}
+
+/* Custom Form Groups */
+.custom-form-group {
+    margin-bottom: 20px;
+}
+
+.custom-label {
+    display: block;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-label i {
+    color: var(--accent-gold);
+    font-size: 16px;
+}
+
+.custom-input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid rgba(11, 36, 71, 0.1);
+    border-radius: 12px;
+    font-size: 15px;
+    color: var(--text-dark);
+    background: var(--white);
+    transition: all 0.3s ease;
+    font-family: var(--body-font);
+}
+
+.custom-input:focus {
+    outline: none;
+    border-color: var(--accent-gold);
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1);
+    background: #fffef8;
+}
+
+.custom-input::placeholder {
+    color: #999;
+}
+
+/* Select Dropdown */
+select.custom-input {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23D4AF37' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 18px center;
+    padding-right: 45px;
+}
+
+/* Textarea */
+textarea.custom-input {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Category Grid */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.category-option {
+    cursor: pointer;
+    margin: 0;
+}
+
+.category-option input[type="radio"] {
+    display: none;
+}
+
+.category-card {
+    background: var(--light-bg);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 25px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.category-card i {
+    font-size: 32px;
+    color: var(--primary-blue);
+    margin-bottom: 12px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.category-card span {
+    display: block;
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.category-card:hover {
+    background: var(--white);
+    border-color: var(--accent-gold);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.category-card:hover::before {
+    opacity: 1;
+}
+
+.category-card:hover i {
+    color: var(--accent-gold);
+    transform: scale(1.1);
+}
+
+.category-option input[type="radio"]:checked + .category-card {
+    background: linear-gradient(135deg, #0B2447 0%, #19376D 100%);
+    border-color: var(--accent-gold);
+    box-shadow: 0 10px 30px rgba(11, 36, 71, 0.2);
+}
+
+.category-option input[type="radio"]:checked + .category-card i {
+    color: var(--accent-gold);
+    transform: scale(1.15);
+}
+
+.category-option input[type="radio"]:checked + .category-card span {
+    color: var(--white);
+}
+
+/* Experience Options */
+.experience-options {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.experience-option {
+    cursor: pointer;
+    margin: 0;
+}
+
+.experience-option input[type="radio"] {
+    display: none;
+}
+
+.experience-badge {
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--light-bg);
+    border: 2px solid transparent;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+}
+
+.experience-option:hover .experience-badge {
+    background: var(--white);
+    border-color: var(--accent-gold);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.experience-option input[type="radio"]:checked + .experience-badge {
+    background: var(--gradient-gold);
+    border-color: var(--accent-gold);
+    color: var(--primary-blue);
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Submit Button */
+.scholarship-submit-btn {
+    background: var(--gradient-gold);
+    color: var(--primary-blue);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 16px 50px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.scholarship-submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.scholarship-submit-btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.scholarship-submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4);
+    color: var(--primary-blue);
+}
+
+.scholarship-submit-btn i {
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .scholarship-modal-header {
+        padding: 25px 20px;
+    }
+    
+    .scholarship-modal-header .modal-title {
+        font-size: 22px;
+    }
+    
+    .scholarship-modal-header .modal-subtitle {
+        font-size: 13px;
+    }
+    
+    .scholarship-modal-body {
+        padding: 25px 20px;
+        max-height: 60vh;
+    }
+    
+    .form-section-title {
+        font-size: 18px;
+    }
+    
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .experience-options {
+        flex-direction: column;
+    }
+    
+    .experience-badge {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .scholarship-submit-btn {
+        width: 100%;
+        padding: 14px 30px;
+    }
+}
+
+/* Modal Animation */
+.modal.fade .scholarship-modal-content {
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+.modal.show .scholarship-modal-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
 
